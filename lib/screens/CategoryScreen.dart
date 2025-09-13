@@ -6,17 +6,17 @@ import '../models/Category.dart';
 import '../util/Constants.dart';
 // import 'product/ProductFilterByCategoryScreen.dart';
 
-class Categoryscreen extends StatefulWidget {
+class CategoryScreen extends StatefulWidget {
 
   final String title;
 
-  const Categoryscreen({super.key, required this.title});
+  const CategoryScreen({super.key, required this.title});
 
   @override
-  State<Categoryscreen> createState() => _CategoryscreenState();
+  State<CategoryScreen> createState() => _CategoryScreenState();
 }
 
-class _CategoryscreenState extends State<Categoryscreen> {
+class _CategoryScreenState extends State<CategoryScreen> {
 
 
   late List<Category> categories = [];
@@ -39,6 +39,9 @@ class _CategoryscreenState extends State<Categoryscreen> {
           categories =
               data.map((category) => Category.fromJson(category)).toList();
         });
+
+        print("success");
+        print(categories.toString());
       } else {
         throw Exception('Failed to load categories' + Constants.BASE_URL +
             Constants.CATEGORY_ROUTE);
