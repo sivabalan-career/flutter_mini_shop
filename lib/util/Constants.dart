@@ -7,5 +7,6 @@ class Constants{
 
   static const String BRAND_ROUTE = "/brands";
 
+  static const String PRODUCT_ROUTE = "/products";
 
 }
