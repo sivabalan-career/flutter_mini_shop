@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_laravel_sanctum_api_demo/utils/Constants.dart';
+import '../util/Constants.dart';
 
 
 Dio dio() {
